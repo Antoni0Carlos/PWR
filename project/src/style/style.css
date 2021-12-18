@@ -4,24 +4,87 @@
   box-sizing: 0;
 }
 
+h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  letter-spacing: 2pt;
+}
+
 body {
   overflow-x: hidden;
   background-color: rgb(1, 0, 1);
   color: rgb(255, 255, 255);
-  font-family: Releway, sans-serif;
+  font-family: "Releway Open Sans", sans-serif;
+}
+
+main .n4a5v1 .logo {
+  padding: 25px 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 50%;
+}
+
+main .space {
+  padding: 25px 15px;
+  width: 35%;
+  background-color: rgb(29, 29, 29);
 }
 
 main .n4a5v1 {
   display: flex;
+  position: relative;
 }
 
 main .n4a5v1 li a {
-  padding: 20px;
+  padding: 35px 10px;
   list-style: none;
+  color: rgb(255, 255, 255);
+  justify-content: end;
 }
 
-main .n4a5v1 .logo {
-  padding: 15px 20px;
+main .img1 {
+  position: absolute;
+  top: 0;
+  left: 56%;
+}
+
+main .home-text {
+  position: relative;
+  top: 50%;
+  transform: translate(10%, 40%);
+}
+
+main .btn1 {
+  padding-left: 10px;
+}
+
+main button {
+  background-color: rgb(228, 252, 96);
+  color: rgb(1, 0, 1);
+  text-align: end;
+  margin-left: 10px;
+  padding: 4px;
+}
+
+main button i {
+  background-color: black;
   font-size: 22px;
-  width: 50%;
+  color: rgb(228, 252, 96);
+  padding: 15px;
+}
+
+main button span {
+  margin: 0px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2pt;
 }
