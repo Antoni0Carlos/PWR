@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(1, 0, 1);
+  color: rgb(255, 255, 255);
+  font-family: Releway, sans-serif;
+}
+
+main .n4a5v1 {
+  display: flex;
+}
+
+main .n4a5v1 li a {
+  padding: 20px;
+  list-style: none;
+}
+
+main .n4a5v1 .logo {
+  padding: 15px 20px;
+  font-size: 22px;
+  width: 50%;
+}
