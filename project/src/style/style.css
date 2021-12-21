@@ -5,9 +5,11 @@
 }
 
 h1 {
-  font-size: 8rem;
+  letter-spacing: 0pt;
+  font-size: 7.5rem;
   font-weight: 600;
   text-transform: uppercase;
+  line-height: 0.9;
 }
 
 h2 {
@@ -16,6 +18,7 @@ h2 {
 
 h3 {
   font-size: 1.1rem;
+  line-height: 3;
   letter-spacing: 2pt;
 }
 
@@ -87,4 +90,32 @@ main button span {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 2pt;
+}
+
+section .sdi1 {
+  margin: 46% 15% 15%;
+  background-color: darkblue;
+}
+
+section .sdhb1 {
+  width: 450px;
+  margin: 15% 5% 5%;
+  text-align: justify;
+}
+
+section .dh1 {
+  white-space: nowrap;
+}
+
+section .sddl1 {
+  font-size: 0.9rem;
+  width: 300px;
+  line-height: 2;
+  margin: 20px 0;
+}
+
+section .sdi2 {
+  width: 20%;
+  margin-top: 36%;
+  margin-left: 5%;
 }
