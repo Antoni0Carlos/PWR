@@ -29,7 +29,19 @@ body {
   font-family: "Releway Open Sans", sans-serif;
 }
 
-main .n4a5v1 .logo {
+.btn1 {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  background-color: rgb(228, 252, 96);
+  border: none;
+  flex-direction: row;
+  gap: 40px;
+  color: rgb(1, 0, 1);
+  align-items: center;
+}
+/*---------------------------------------------START MAIN----------------------------------------------*/
+main .hmdn1 .logo {
   padding: 25px 15px;
   font-size: 2rem;
   font-weight: 700;
@@ -42,56 +54,51 @@ main .space {
   background-color: rgb(29, 29, 29);
 }
 
-main .n4a5v1 {
+main .hmdn1 {
   display: flex;
   position: relative;
 }
 
-main .n4a5v1 li a {
+main .hmdn1 li a {
   padding: 35px 10px;
   list-style: none;
   color: rgb(255, 255, 255);
   justify-content: end;
 }
 
-main .img1 {
+main .hmdi {
   position: absolute;
   top: 0;
   left: 56%;
 }
 
-main .home-text {
+main .hmdtxt1 {
   position: relative;
   top: 50%;
   transform: translate(10%, 40%);
 }
 
-main .btn1 {
-  padding-left: 10px;
-}
-
-main button {
-  background-color: rgb(228, 252, 96);
-  color: rgb(1, 0, 1);
-  text-align: end;
-  margin-left: 10px;
-  padding: 4px;
-}
-
 main button i {
-  background-color: black;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, #000),
+    color-stop(50%, #1d1d1d),
+    color-stop(0%, #1d1d1d)
+  );
   font-size: 22px;
+  margin-left: 4px;
   color: rgb(228, 252, 96);
-  padding: 15px;
+  padding: 14px 15px;
 }
 
 main button span {
-  margin: 0px 30px;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 2pt;
 }
 
+/*---------------------------------------------START SECTION 1----------------------------------------------*/
 section .sdi1 {
   margin: 46% 15% 15%;
   background-color: darkblue;
@@ -118,4 +125,83 @@ section .sdi2 {
   width: 20%;
   margin-top: 36%;
   margin-left: 5%;
+}
+
+section button i {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, #000),
+    color-stop(50%, #1d1d1d),
+    color-stop(0%, #1d1d1d)
+  );
+  font-size: 22px;
+  color: rgb(228, 252, 96);
+  padding: 14px 15px;
+}
+
+section button span {
+  margin-left: 34px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/*---------------------------------------------START SECTION 2----------------------------------------------*/
+section .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 40px;
+}
+
+section .sdh1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+section .sdh1 h3 {
+  margin-right: 355px;
+}
+
+section .sdtxt2 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-left: 60px;
+}
+section .sdtxt3 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-left: 10px;
+}
+
+section .sdcol1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+section .sdvincon {
+  color: rgb(228, 252, 96);
+  font-size: 1.4rem;
+}
+
+section .sdptxt1 {
+  font-size: 0.9rem;
+  width: 360px;
+  line-height: 2;
+  padding-left: 45px;
+}
+
+section .sdi3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
