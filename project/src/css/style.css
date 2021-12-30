@@ -1,0 +1,473 @@
+/*==================== VARIABLES CSS ====================*/
+:root{
+  
+  /*========== Colors ==========*/
+  --text-color: rgb(255, 255, 255);
+  --text-color-hover:  rgba(229, 252, 96, 0.445);
+  --text--color-text:rgb(204, 204, 204);
+  --button-color: rgb(228, 252, 96);
+  --button-hover: rgb(255, 255, 255);
+  --logo-color: rgb(228, 252, 96);
+  --body-color: rgb(0, 0, 0);
+  --container-color: rgb(1, 0, 1);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Releway Open Sans", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 1.8rem;
+  --h1-font-size: 7.5rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.125rem;
+  --h4-font-sise: 1.1rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 0.913rem;
+  --smaller-font-size: 0.75rem;
+
+    /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*==================== REUSABLE CSS CLASSES ====================*/
+
+/*==================== LAYOUT ====================*/
+
+.container-fluid {
+max-width: 100%;
+background-color: var(--container-color);
+}
+ 
+.grid{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+  
+/*==================== NAV ====================*/
+.nav {
+ width: 95%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+ color: var(--logo-color);
+ font-size: var( --big-font-size);
+ margin: 2rem;
+}
+
+.nav__span{
+ color: var(--logo-color);
+}
+
+
+/*
+@media screen and (max-width: 767px) {
+  .nav__menu {
+
+}
+*/
+.nav__list {
+ display: flex;
+ margin-right: 3rem;
+ 
+}
+
+.nav__item{
+ margin-left: 15px;
+}
+
+.nav__link{
+font-size: var(--normal-font-size);
+color: var(--text-color);
+}
+/*
+.nav__icon {
+  
+}
+
+.nav__close {
+ 
+}
+
+.nav__close:hover {
+
+}
+*/
+/* show menu */
+/*
+
+.show-menu {
+
+}
+
+/* Active link */
+
+/*==================== HOME ====================*/
+
+.home__container {
+ width: 100%;
+ margin: 0.5rem;
+}
+
+.home__content {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+
+.home__background {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.home__column{
+  width: 50%;
+  top: 0;
+  right: 0;
+  height: 96vh;
+  background-color:  rgba(255, 255, 255, 0.075);
+  position: absolute;
+  display: flex;
+flex-direction: column;
+align-items:initial;
+justify-content: end;
+  
+}
+
+.home__img{
+  position: absolute;
+  top: 0;
+}
+
+.home__data {
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content: flex-end;
+margin-left: 5%;
+margin-bottom: 25px;
+}
+
+.home__title {
+ font-size: var(--h1-font-size);
+ font-weight: 700;
+}
+
+.home__subtitle {
+  font-size: var(--h3-font-size);
+  margin: 0 0 0    0.5rem;
+}
+
+.home__button{
+  position: absolute;
+  bottom: -28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*==================== BUTTONS ====================*/
+
+.button {
+  width: 130px;
+  height: 60px;
+  display: flex;
+  background-color: var(--button-color);
+  border: none;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.button:hover {
+  background-color:   var(--button-hover);
+}
+
+.button__span{
+  color: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.button__icon {
+   border: solid 2px var(--button-color);
+   background-color: rgba(255, 255, 255, 0.075);
+   color: var(--button-color);
+   padding: 18.5px;
+}
+/*
+.button--flex {
+
+}
+
+.button--small {
+
+}
+
+.button--link {
+
+}
+
+.button--link:hover {
+
+}
+*/
+/*==================== ABOUT ====================*/
+.about__content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+  padding: 2.7rem;
+}
+
+.about__data {
+  margin: 10rem  0 0  4rem;
+  padding: 0;
+}
+
+
+.about__title {
+ font-size: var(--h1-font-size);
+ font-weight: 700;
+ line-height: 80pt;
+ text-transform: uppercase;
+}
+
+.about__subtitle{
+  font-size: var(--h3-font-size);
+  margin: 0 0 1rem    0.5rem;
+}
+
+.about__description{
+  display: flex;
+  margin-top:  2rem;
+}
+
+.about__col{
+width: 70%;
+}
+
+.about__paragraph{
+width: 80%;
+margin-left: 0.5rem;
+padding-bottom: 2rem;
+font-size: var( --small-font-size);
+color: var(--text--color-text);
+}
+
+.about__button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about__img{
+ min-width: 300px;
+ height: auto;
+}
+
+/*==================== DESCRIPTION PWR ====================*/
+.description__titles{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description__subtitle{
+  font-size: var(--h3-font-size);
+  margin-right: 410px;
+}
+
+.description__title{
+  font-size: var(--h1-font-size);
+  font-weight: 700;
+  line-height: 80pt;
+  text-transform: uppercase;
+  margin-bottom: 7rem;
+}
+.description-pwr__container{
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.description-pwr__content{
+  max-width: 90%;
+  display: flex;
+}
+
+.description-pwr__column{
+  margin: 10rem 0 0 2rem ;
+display: flex;
+flex-direction: column;
+gap: 70px;
+}
+
+.description__data{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.description-pwr__span{
+  font-size: var(--h3-font-size);
+
+}
+
+.description__paragraph{
+  font-size: var(--small-font-size);
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.description-pwr__icon{
+color: var(--button-color);
+}
+.description-pwr__img{
+  background-color: var(  --button-color);
+  display: flex;
+  justify-content: center;
+  width: 45%;
+}
+
+.description__img{
+min-width: 300px;
+}
+
+/*====================  IN MIND ====================*/
+.mind__button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*==================== CONTACT ME ====================*/
+/*
+.contact__container {
+
+}
+
+.contact__content {
+
+}
+
+.contact__data {
+
+}
+
+.contact__title {
+
+}
+
+.contact__subtitle {
+
+}
+
+.contact__description {
+}
+
+.contact__btn-s {
+
+}
+
+.contact__btn-s:hover {
+
+}
+*/
+/*==================== FOOTER ====================*/
+/*
+
+}
+.footer__data {
+
+}
+
+.footer-icon {
+
+}
+
+.footer__social {
+
+}
+
+.footer__social-icon {
+
+}
+
+.footer__social-icon:hover {
+
+}
+
+.footer__Copyrigh {
+
+}
+
+.footer__logo {
+
+}
+
+.button__footer {
+
+}
+*/
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
+
+ /*
+*/
