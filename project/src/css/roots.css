@@ -1,0 +1,75 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+  --text-color: rgb(255, 255, 255);
+  --text-color-hover: rgba(229, 252, 96, 0.445);
+  --text--color-text: rgb(204, 204, 204);
+  --button-color: rgb(228, 252, 96);
+  --button-hover: rgb(255, 255, 255);
+  --logo-color: rgb(228, 252, 96);
+  --body-color: rgb(0, 0, 0);
+  --container-color: rgb(1, 0, 1);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Releway Open Sans", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 1.8rem;
+  --h1-font-size: 7.5rem;
+  --h2-font-size: 3rem;
+  --h3-font-size: 1.3rem;
+  --h4-font-sise: 1.1rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 0.913rem;
+  --smaller-font-size: 0.75rem;
+  --big-font-size: 1.8rem;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+/*max 750px min 320px*/
+
+@media screen and (max-width: 320px) {
+  .container-fluid {
+    max-width: 90%;
+  }
+}
+
+/* For medium devices */
+/*max 1000px min 751px*/
+
+/* For large devices */
+/*min 1001px*/
+
+@media (min-width: 1115px) {
+  .container-fluid {
+    max-width: 90%;
+  }
+}
+
+.nav {
+  width: 100%;
+}
+.nav__list {
+  margin-right: 0;
+}
+
+/*========about======*/
+.about__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0rem;
+}
