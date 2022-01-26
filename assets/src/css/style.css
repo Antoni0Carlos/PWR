@@ -493,9 +493,7 @@ img {
 /*==================== FOOTER ====================*/
 
 .footer {
-  background-image: url(PWR/assets/src/img/bg-footer.webp);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: rgba(255, 255, 255, 0.075);
   margin-top: 6rem;
 }
 
