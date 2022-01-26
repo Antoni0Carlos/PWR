@@ -387,6 +387,8 @@ img {
 /*====================  IN MIND ====================*/
 .mind__container {
   margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .mind__subtitle {
