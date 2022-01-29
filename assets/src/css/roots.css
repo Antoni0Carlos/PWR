@@ -15,7 +15,7 @@
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 1.8rem;
-  --h1-font-size: 7.5rem;
+  --h1-font-size: 7rem;
   --h2-font-size: 3rem;
   --h3-font-size: 1.3rem;
   --h4-font-sise: 1.1rem;
@@ -40,36 +40,119 @@
 /* For small devices */
 /*max 750px min 320px*/
 
-@media screen and (max-width: 320px) {
+@media (min-width: 750px) {
   .container-fluid {
     max-width: 90%;
   }
 }
+/*========NAV MOBILE==========*/
 
 /* For medium devices */
-/*max 1000px min 751px*/
-
-/* For large devices */
-/*min 1001px*/
-
-@media (min-width: 1115px) {
+/*max 1114px min 751px*/
+@media (max-width: 1114px) {
+  /*LAYOUT MEDIA*/
   .container-fluid {
+    max-width: 95%;
+  }
+  .nav__logo {
+    margin-left: -10px;
+  }
+  .nav__list {
+    margin-right: 0;
+  }
+  .button {
+    width: 115px;
+    height: 60px;
+  }
+  .button__icon {
+    padding: 18.2px;
+  }
+  /*HOME MEDIA*/
+  .home__bg {
+    margin-left: -20px;
+  }
+  .home__col-1 {
+    height: 80%;
+  }
+  .home__title {
+    font-size: 5.5rem;
+  }
+  .home__img {
+    max-height: 55%;
+  }
+  /*ABOUT MEDIA*/
+  .about__content {
+    margin: var(--mb-0-50);
+    padding: 0;
+  }
+  .about__title {
+    font-size: 5.5rem;
+  }
+  .about__description {
+    margin-top: var(--mb-0-5);
+    margin-bottom: var(--mb-2);
+  }
+  .about__paragraph {
+    width: 95%;
+  }
+  .about__img {
+    margin-right: -45px;
+    padding-left: 20px;
+  }
+  /*DESCRIPTION  MEDIA*/
+  .description__subtitle {
+    font-size: var(--h3-font-size);
+    margin-right: 10.5rem;
+    margin-top: var(--mb-1-5);
+  }
+  .description__title {
+    font-size: 5.5rem;
+    margin-bottom: auto;
+  }
+  /*TECH  MEDIA*/
+  .technology__subtitle {
+    margin-right: 28rem;
+  }
+  .technology__title {
+    font-size: 5.5rem;
+  }
+  .technology__col {
+    margin-left: var(--mb-1);
+  }
+  .technology__data {
+    right: -90px;
+  }
+  .technology__img {
+    left: -20rem;
+  }
+  /*MIND MEDIA*/
+  .mind__container {
     max-width: 90%;
+  }
+  .mind__title {
+    font-size: 5.5rem;
+    line-height: 80pt;
+  }
+  /*CONTACT MEDIA*/
+  .contact__title-form {
+    font-size: 2.5rem;
+  }
+  .contact__icon {
+    font-size: 3.8rem;
+  }
+  .contact__item {
+    margin-right: var(--mb-3);
   }
 }
 
-.nav {
-  width: 100%;
-}
-.nav__list {
-  margin-right: 0;
-}
+/* For large devices */
+/*min 1115px*/
 
-/*========about======*/
-.about__content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-  padding: 0rem;
+@media (min-width: 1115px) {
+  /*LAYOUT MEDIA*/
+  .container-fluid {
+    max-width: 100%;
+  }
+
+  /*HOME MEDIA*/
 }
