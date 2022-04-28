@@ -12,9 +12,6 @@
 
   /*========== Font and typography ==========*/
   --body-font: "Releway Open Sans", sans-serif;
-
-  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-  --big-font-size: 1.8rem;
   --h1-font-size: 7rem;
   --h2-font-size: 3rem;
   --h3-font-size: 1.3rem;
@@ -25,7 +22,6 @@
   --big-font-size: 1.8rem;
 
   /*========== Margenes Bottom ==========*/
-  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -37,122 +33,290 @@
 }
 
 /*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-/*max 750px min 320px*/
-
-@media (min-width: 750px) {
-  .container-fluid {
-    max-width: 90%;
+/*=====small screens=====*/
+@media only screen and (max-width: 500px) {
+  :root{
+  --body-font: "Releway Open Sans", sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.3rem;
+  --h4-font-sise: 1.1rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 0.913rem;
+  --smaller-font-size: 0.75rem;
+  --big-font-size: 1.8rem;
   }
-}
-/*========NAV MOBILE==========*/
-
-/* For medium devices */
-/*max 1114px min 751px*/
-@media (max-width: 1114px) {
-  /*LAYOUT MEDIA*/
-  .container-fluid {
-    max-width: 95%;
+   /*=========== NAV =============*/
+  .nav {
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
   }
   .nav__logo {
-    margin-left: -10px;
+    margin: 0;
   }
   .nav__list {
-    margin-right: 0;
+    display: flex;
+    margin: 0 0.5rem;
   }
-  .button {
-    width: 115px;
-    height: 60px;
-  }
-  .button__icon {
-    padding: 18.2px;
-  }
-  /*HOME MEDIA*/
-  .home__bg {
-    margin-left: -20px;
-  }
-  .home__col-1 {
-    height: 80%;
-  }
-  .home__title {
-    font-size: 5.5rem;
-  }
-  .home__img {
-    max-height: 55%;
-  }
-  /*ABOUT MEDIA*/
-  .about__content {
-    margin: var(--mb-0-50);
-    padding: 0;
-  }
-  .about__title {
-    font-size: 5.5rem;
-  }
-  .about__description {
-    margin-top: var(--mb-0-5);
-    margin-bottom: var(--mb-2);
-  }
-  .about__paragraph {
-    width: 95%;
-  }
-  .about__img {
-    margin-right: -45px;
-    padding-left: 20px;
-  }
-  /*DESCRIPTION  MEDIA*/
-  .description__subtitle {
-    font-size: var(--h3-font-size);
-    margin-right: 10.5rem;
-    margin-top: var(--mb-1-5);
-  }
-  .description__title {
-    font-size: 5.5rem;
-    margin-bottom: auto;
-  }
-  /*TECH  MEDIA*/
-  .technology__subtitle {
-    margin-right: 28rem;
-  }
-  .technology__title {
-    font-size: 5.5rem;
-  }
-  .technology__col {
-    margin-left: var(--mb-1);
-  }
-  .technology__data {
-    right: -90px;
-  }
-  .technology__img {
-    left: -20rem;
-  }
-  /*MIND MEDIA*/
-  .mind__container {
-    max-width: 90%;
-  }
-  .mind__title {
-    font-size: 5.5rem;
-    line-height: 80pt;
-  }
-  /*CONTACT MEDIA*/
-  .contact__title-form {
-    font-size: 2.5rem;
-  }
-  .contact__icon {
-    font-size: 3.8rem;
-  }
-  .contact__item {
-    margin-right: var(--mb-3);
-  }
+  /*=========== HOME =============*/
+.home__container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+.home__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.home__bg {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.home__col-1 {
+  width: 100%;
+  top: 1rem;
+  left: -1.5rem;
+  height: auto;
+  background-color: var(--body-color);
+  position: relative;
+  flex-direction: column;
+}
+.home__subtitle {
+ margin-top: 1rem;
+}
+.home__title {
+ margin-top: 1rem;
+}
+.home__button {
+  position: relative;
+  bottom: 0;
+  margin-top: 4rem;
+}
+ /*=========== ABOUT =============*/
+ .about__container{
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+ } 
+ .about__content {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.about__data {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0.5rem;
+}
+.about__title {
+  margin-top: 1rem;
+  line-height: 50pt;
+}
+.about__subtitle {
+  margin-top: 1rem;
+}
+.about__description {
+  width: 100%;
+  margin-top: 1rem;
+}
+.about__col {
+  width: 100%;
+}
+.about__paragraph{
+  width: 95%;
+  text-align: justify;
+} 
+.img-mobile{
+  display: none;
+}
+.about__button {
+ margin: 3rem 0.5rem;
+}
+/*======= DESCRIPTION PWR =========*/
+.description-pwr__container {
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+}
+.description__titles {
+  align-items: initial;
+  padding: 1.5rem;
+  margin: 0;
+}
+.description__subtitle {
+ width: 100%;
+}
+.description__title {
+  line-height: 0;
+  margin: 3rem 0;
+}
+.description-pwr__content {
+  width: 100%;
+  flex-direction: column;
+}
+.description-pwr__col {
+  margin: 1rem;
+  gap: 30px;
+}
+.description__data {
+  align-items: center;
+  gap: 40px;
+}
+.description-pwr__img {
+  width: 100%;
+}
+/*=========== TECHNOLOGY ==========*/
+.technology__container {
+  width: 100%;
+  height: auto;
+  margin: 3rem 0;
+  flex-direction: column;
+  position: relative;
+}
+.technology__titles {
+  width: 100%;
+  bottom: 0;
+  align-items: initial;
+  margin: 0 1.5rem;
+}
+.technology__subtitle {
+  margin-right: 0;
+}
+.technology__title {
+  line-height: 0pt;
+  margin: 3rem 0;
+}
+.technology__img-background{
+  display: none;
+}
+.technology__col {
+  width: 100%;
+  align-items: initial;
+  padding: 1.5rem;
+}
+.technology__col-1 {
+  width: 100%;
+  align-items: initial;
+  padding: 1.5rem;
 }
 
-/* For large devices */
-/*min 1115px*/
-
-@media (min-width: 1115px) {
-  /*LAYOUT MEDIA*/
-  .container-fluid {
-    max-width: 100%;
-  }
-
-  /*HOME MEDIA*/
+.technology__data {
+  width: 100%;
+  position: relative;
+  bottom: 0;
 }
+.technology__paragraph1 {
+  width: 100%;
+}
+.technology__paragraph2 {
+  width: 100%;
+}
+.technology__img {
+  width: 400px;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*========  IN MIND ==========*/
+.mind__container {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+}
+.mind__title {
+  line-height: 50pt;
+  margin-top: 1.5rem;
+}
+.mind__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+}
+.mind__row-img {
+  min-width: 50%;
+}
+/*==================== CONTACT ME ====================*/
+.contact__content{
+ width: 100%;
+}
+.contact__subtitle {
+  letter-spacing: 2px;
+  margin: 4rem 1rem 2rem;
+}
+.contact__title-form {
+padding-left: 1rem;
+}
+.contact__icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.contact__form {
+  width: 90%;
+}
+.contact__nav {
+  width: 100%;
+  align-items: initial;
+}
+.contact__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+}
+.contact__item {
+  margin-right: 0;
+}
+.contact__link {
+  font-size: var(--normal-font-size);
+}
+
+/*==================== FOOTER ====================*/
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+}
+
+.footer__logo{
+  margin-bottom: 2rem;
+}
+
+.footer__contact {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.footer__subtitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.footer__social {
+  display: flex;
+  align-items: initial;
+  margin: 0;
+}
+
+.footer-link {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.footer__legend{
+margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+}
+
