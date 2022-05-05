@@ -46,6 +46,9 @@
   --smaller-font-size: 0.75rem;
   --big-font-size: 1.8rem;
   }
+section{
+  overflow: hidden;
+}
    /*=========== NAV =============*/
  
   #nav {
