@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -48,9 +48,8 @@ img {
 }
 
 /*==================== NAV ====================*/
-.nav {
+#nav {
   width: 95%;
-  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +80,9 @@ img {
   color: var(--text-color);
 }
 
+#btn__mobile{
+  display: none;
+}
 /*==================== HOME ====================*/
 
 .home__container {
@@ -460,7 +462,6 @@ img {
 
 .contact__nav {
   width: 62%;
-  height: var(--header-height);
   display: flex;
   flex-direction: column;
   align-items: flex-start;

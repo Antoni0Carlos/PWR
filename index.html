@@ -23,9 +23,12 @@
         <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <div class=" container-fluid grid">
-        <nav class="nav">
-          <a href="#" class="nav__logo"><span class="nav__span">PWR</span></a>
-          <ul class="nav__list"> 
+        <nav id="nav">
+          <a href="#" class="nav__logo">PWR</a>
+          <button aria-label="Open Menu" id="btn__mobile"aria-haspopup="true" area-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+          <ul class="nav__list" id="nav__menu" role="menu"> 
             <li class="nav__item">
               <a href="#home"  class="nav__link active">
                 <span class="nav__span">Home</span>
@@ -281,4 +284,6 @@
   ></script>
 <!------SCRIPT  ICON------>
   <script src="https://kit.fontawesome.com/b7fac00d13.js" crossorigin="anonymous"></script>
+  <!------SCRIPT  MAIN------>
+  <script src="./assets/src/js/main.js"></script>
 </html>
