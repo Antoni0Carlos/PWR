@@ -57,7 +57,7 @@ section{
     justify-content: space-around;
   }
   .nav__logo {
-    margin: 0;
+    margin-right: 10rem;
   }
   .nav__list {
     display: flex;
